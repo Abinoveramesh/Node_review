@@ -1,0 +1,33 @@
+name: CICD
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+    
+      - name: Install dependencies
+        run: npm install 
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.PRIVATE_KEY }}
+          script: |
+            cd /var/www/html/Node_review
+            git pull origin main
+            sudo systemctl restart apache2
+            sudo pm2 start server.js
+            sudo pm2 startup
+            npm cache clean --force
