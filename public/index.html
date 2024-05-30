@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Cab Service</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            background-image: url('https://images.unsplash.com/photo-1549491193-42c5a8cf9a13');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cab-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin: 0 10px 30px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+        .cab-card:hover {
+            transform: translateY(-10px);
+        }
+        .cab-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .cab-info h2 {
+            margin-top: 0;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .cab-info p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore our Luxury Fleet</h1>
+        <p>Book your ride with ease and style</p>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="cab-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO2RxXdll4yLb1KY2gCF-Op3PGKarIeg0-eZALLbFTbw&s" alt="Sedan Cab">
+                <div class="cab-info">
+                    <h2>Sedan</h2>
+                    <p>Experience comfort and elegance with our sedan collection. Perfect for solo trips or small groups.</p>
+                    <p>Starting from $30/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://imgd.aeplcdn.com/1280x720/n/cw/ec/45691/dzire-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80" alt="SUV Cab">
+                <div class="cab-info">
+                    <h2>SUV</h2>
+                    <p>Explore the outdoors in our spacious SUVs. Ideal for family trips or group adventures.</p>
+                    <p>Starting from $40/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaaQme7jPcZ33VOBpIoLqkDxqF5tjFSR4XBwBepwoWtQ&s" alt="Luxury Cab">
+                <div class="cab-info">
+                    <h2>Luxury</h2>
+                    <p>Indulge in luxury and sophistication with our premium car fleet. Elevate your travel experience.</p>
+                    <p>Starting from $60/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://www.shutterstock.com/image-photo/handsome-taxi-driver-car-on-260nw-2056944956.jpg" alt="Extra Cab 1">
+                <div class="cab-info">
+                    <h2>Extra Cab 1</h2>
+                    <p>Description of the extra cab 1.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://www.thestatesman.com/wp-content/uploads/2019/01/Kolkata-taxi.jpg" alt="Extra Cab 2">
+                <div class="cab-info">
+                    <h2>Extra Cab 2</h2>
+                    <p>Description of the extra cab 2.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCs2pqxtgHUqF6UQKqt5j9tUZE5jzu2JgsCfVa7wbduFriPAIHH0zDFu28AjKjI-mitpc&usqp=CAU" alt="Extra Cab 3">
+                <div class="cab-info">
+                    <h2>Extra Cab 3</h2>
+                    <p>Description of the extra cab 3.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+            <!-- New Row -->
+            <div class="cab-card">
+                <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-75.jpeg?isig=0&q=80" alt="Extra Cab 4">
+                <div class="cab-info">
+                    <h2>Extra Cab 4</h2>
+                    <p>Description of the extra cab 4.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PXRyvka0FGO4UYoLxZxWhuYxVjJBYnM9bFRD7xWrnTWLs2hkzAOTWYElOCdyCWuY6AI&usqp=CAU" alt="Extra Cab 5">
+                <div class="cab-info">
+                    <h2>Extra Cab 5</h2>
+                    <p>Description of the extra cab 5.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+            <div class="cab-card">
+                <img src="https://imgd.aeplcdn.com/370x208/n/cw/ec/130591/fronx-exterior-right-front-three-quarter-109.jpeg?isig=0&q=80" alt="Extra Cab 6">
+                <div class="cab-info">
+                    <h2>Extra Cab 6</h2>
+                    <p>Description of the extra cab 6.</p>
+                    <p>Starting from $XX/hour</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rental Cab Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>
